@@ -1,15 +1,17 @@
-FROM node:current-alpine
+FROM node:11-alpine
 
 ADD start-dzldr.sh /
 
-RUN apk update
-
-RUN apk add --no-cache \
+RUN \
+    apk update && \
+    apk add --no-cache \
     bash \
-	ca-certificates \
+    ca-certificates \
     wget \
     unzip \
-	jq
+    jq && \
+    chmod 777 /start-dzldr.sh && \
+    ln -sf /root/.config/Deezloader\ Remix/ /config
     
 EXPOSE 1730
 

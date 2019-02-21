@@ -1,7 +1,5 @@
 #!/bin/bash
-
 FILE=/deezloaderremix/update.json
-
 if [ -f $FILE ]; then
 	echo "File $FILE exists."
 	wget -O /deezloaderremix/online.json 'https://notabug.org/RemixDevs/DeezloaderRemix/raw/master/update.json' &
@@ -16,7 +14,8 @@ if [ -f $FILE ]; then
 		rm $FILE &
 		wait
 	fi
-elif [ ! -f $FILE ]; then
+fi
+if [ ! -f $FILE ]; then
 	echo "--- Downloading Latest Version ---"
 	cd /
 	rm master.zip &
