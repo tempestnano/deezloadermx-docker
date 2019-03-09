@@ -8,6 +8,7 @@ RUN \
     bash \
     ca-certificates \
     wget \
+    git \
     unzip \
     jq && \
     chmod 777 /start-dzldr.sh && \
