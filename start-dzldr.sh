@@ -26,7 +26,7 @@ if [ ! -f $FILE ]; then
 	unzip master.zip &
 	wait
 	cd /deezloaderremix
-	npm install &
+	yarn install &
 	wait
 	exec node /deezloaderremix/app/app.js
 fi
