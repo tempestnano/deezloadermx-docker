@@ -16,6 +16,8 @@ $ docker run -d --name Deezldr \
               bocki/deezloaderrmx
 ```
 
+To access the webinterface, go to http://YOURSERVERIP:1730 
+
 ## Disclaimer and Links
 
 I am in no way affiliated with the DeezloaderRMX project (or any other Deezloader project for that matter), I just wanted the challenge to create my first docker
