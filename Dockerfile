@@ -12,7 +12,7 @@ RUN \
     unzip \
     jq && \
     chmod 777 /start-dzldr.sh && \
-    ln -sf /root/.config/Deezloader\ Remix/ /config \
+    ln -sf /root/.config/Deezloader\ Remix/ /config && \
     ln -sf /downloads /root/Deezloader\ Music
     
 EXPOSE 1730
