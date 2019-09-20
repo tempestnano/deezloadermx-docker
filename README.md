@@ -18,6 +18,12 @@ $ docker run -d --name Deezldr \
 
 To access the webinterface, go to http://YOURSERVERIP:1730 
 
+## Tags
+
+There are only 2 tags right now.
+latest      : Latest state of the master branch. Can be considered "working"
+latest-dev  : Latest state of the development branch. Highly unstable, can break at any time. You should not generally use this.
+
 ## Disclaimer and Links
 
 I am in no way affiliated with the DeezloaderRMX project (or any other Deezloader project for that matter), I just wanted the challenge to create my first docker
