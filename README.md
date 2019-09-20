@@ -29,7 +29,10 @@ latest-dev  : Latest state of the development branch. Highly unstable, can break
 I am in no way affiliated with the DeezloaderRMX project (or any other Deezloader project for that matter), I just wanted the challenge to create my first docker
 
 Dockerhub link for this container: https://hub.docker.com/r/bocki/deezloaderrmx
+
 Repo for Deezloader Remix: https://notabug.org/RemixDevs/DeezloaderRemix
+
 Issue Tracker for this Docker: https://github.com/Bockiii/deezloadermx-docker/issues
+
 
 Feel free to open a request in github that is docker related, not for Deezloader development. Go to their repo for that.
