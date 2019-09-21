@@ -1,20 +1,36 @@
-FROM node:11-alpine
+FROM lsiobase/alpine:3.10
 
-ADD start-dzldr.sh /
+ENV PUID=1000
+ENV PGID=1000
 
 RUN \
     apk update && \
     apk add --no-cache \
-    bash \
-    ca-certificates \
+    nodejs \
+    npm \
+    yarn \
     wget \
     git \
     unzip \
     jq && \
-    chmod 777 /start-dzldr.sh && \
-    ln -sf /root/.config/Deezloader\ Remix/ /config && \
-    ln -sf /downloads /root/Deezloader\ Music
-    
+    mkdir /deez && \
+    chown abc:abc /deez && \
+    rm -R /config && \
+    ln -sf /deez/.config/Deezloader\ Remix/ /config && \
+    ln -sf /downloads /deez/Deezloader\ Music
+
+RUN \
+    wget https://notabug.org/RemixDevs/DeezloaderRemix/archive/master.zip && \
+    unzip master.zip && \
+    rm master.zip
+
+WORKDIR /deezloaderremix
+
+RUN \
+    yarn install
+  
 EXPOSE 1730
 
-ENTRYPOINT ["./start-dzldr.sh"]
+COPY root/ /
+
+VOLUME /downloads /config
