@@ -19,11 +19,17 @@ $ docker run -d --name Deezldr \
 ```
 
 Explanation:
+
 `-v /your/storage/path/:/downloads`     - Path for your music downloads. Adapt the left part of the :
+
 `-v /your/config/location:/config`      - OPTIONAL: Path to your local configuration. Adapt the left part of the :
+
 `-e PUID=1000`                          - OPTIONAL: User ID of the user you want the container to run as in order to fix folder permission issues
+
 `-e PGID=1000`                          - OPTIONAL: Group ID, see above
+
 `-p 1730:1730`                          - Port forwarded to the webinterface. If you want to change the outward facing port, change the left number of the :
+
 `bocki/deezloaderrmx`                   - This container
 
 To access the webinterface, go to http://YOURSERVERIP:1730 
