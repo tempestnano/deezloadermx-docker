@@ -38,19 +38,19 @@ services:
 
 ### Explanation:
 
-`-v /your/storage/path/:/downloads`     - Path for your music downloads. Adapt the left part of the :
+`-v /your/storage/path/:/downloads`     - Path for your music downloads.
 
-`-v /your/config/location:/config`      - OPTIONAL: Path to your local configuration. Adapt the left part of the :
+`-v /your/config/location:/config`      - OPTIONAL: Path to your local configuration.
 
-`-e PUID=1000`                          - OPTIONAL: User ID of the user you want the container to run as in order to fix folder permission issues
+`-e PUID=1000`                          - OPTIONAL: User ID of the user you want the container to run as in order to fix folder permission issues.
 
-`-e PGID=1000`                          - OPTIONAL: Group ID, see above
+`-e PGID=1000`                          - OPTIONAL: Group ID, see above.
 
-`-p 1730:1730`                          - Port forwarded to the webinterface. If you want to change the outward facing port, change the left number of the :
+`-p 1730:1730`                          - Port opened for the web interface.
 
-`bocki/deezloaderrmx`                   - This container
+`bocki/deezloaderrmx`                   - This container.
 
-To access the web interface, go to http://<YOURSERVERIP>:1730 
+To access the web interface, go to http://YOURSERVERIP:1730 
 
 ## Tags
 
@@ -69,4 +69,4 @@ Repo for Deezloader Remix: https://notabug.org/RemixDevs/DeezloaderRemix
 Issue Tracker for this Docker: https://github.com/Bockiii/deezloadermx-docker/issues
 
 
-Feel free to open a issue that is Docker related, and not related to Deezloader development. Go to the Deezloader repository for that.
+Feel free to open an issue that is Docker related, and not related to Deezloader development. Go to the Deezloader repository for that.
