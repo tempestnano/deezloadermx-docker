@@ -55,8 +55,12 @@ To access the web interface, go to http://YOURSERVERIP:1730
 ## Tags
 
 There are only 2 tags right now.
-latest      : Latest state of the master branch. Can be considered "working"
-latest-dev  : Latest state of the development branch. Highly unstable, can break at any time. You should not generally use this.
+
+`latest`      : Latest state of the master branch. Can be considered "working"
+
+`latest-dev`  : Latest state of the development branch. Highly unstable, can break at any time. You should not generally use this.
+
+`Important: The exposed port on the latest-dev Tag is 1731, not 1730. Please change that in your compose or run statement.`
 
 ## Disclaimer and Links
 

@@ -29,7 +29,7 @@ WORKDIR /deezloaderremix
 RUN \
     yarn install
   
-EXPOSE 1730
+EXPOSE 1731
 
 COPY root/ /
 
