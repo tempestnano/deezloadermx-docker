@@ -46,7 +46,7 @@ services:
 
 `-e PGID=1000`                          - OPTIONAL: Group ID, see above.
 
-`-p 1730:1730`                          - Port opened for the web interface.
+`-p 1730:1730`                          - Port opened for the web interface. (port 1731 if you are using the latest-dev tag)
 
 `bocki/deezloaderrmx`                   - This container.
 
@@ -59,8 +59,6 @@ There are only 2 tags right now.
 `latest`      : Latest state of the master branch. Can be considered "working"
 
 `latest-dev`  : Latest state of the development branch. Highly unstable, can break at any time. You should not generally use this.
-
-`Important: The exposed port on the latest-dev Tag is 1731, not 1730. Please change that in your compose or run statement.`
 
 ## Disclaimer and Links
 
