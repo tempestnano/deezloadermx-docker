@@ -1,0 +1,16 @@
+image: jstrader/deezloadermx:latest
+manifests:
+  - image: jstrader/deezloadermx:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: jstrader/deezloadermx:arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
+  - image: jstrader/deezloadermx:arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
