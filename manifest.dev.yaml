@@ -1,15 +1,15 @@
-image: jstrader/deezloadermx:dev
+image: bocki/deezloaderrmx:dev
 manifests:
-  - image: jstrader/deezloadermx:dev.amd64
+  - image: bocki/deezloaderrmx:dev.amd64
     platform:
       architecture: amd64
       os: linux
-  - image: jstrader/deezloadermx:dev.arm32v7
+  - image: bocki/deezloaderrmx:dev.arm32v7
     platform:
       architecture: arm
       os: linux
       variant: v7
-  - image: jstrader/deezloadermx:dev.arm64v8
+  - image: bocki/deezloaderrmx:dev.arm64v8
     platform:
       architecture: arm64
       os: linux

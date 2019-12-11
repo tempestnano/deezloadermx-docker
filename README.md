@@ -16,7 +16,7 @@ $ docker run -d --name Deezldr \
               -e PUID=1000 \
               -e PGID=1000 \
               -p 1730:1730 \
-              jstrader/deezloadermx
+              bocki/deezloaderrmx
 ```
 
 ### Example for Docker Compose:
@@ -24,7 +24,7 @@ $ docker run -d --name Deezldr \
 version: '3.3'
 services:
     deezloaderrmx:
-	    image: jstrader/deezloadermx
+	    image: bocki/deezloaderrmx
         container_name: Deezldr
         volumes:
             - /your/storage/path/:/downloads
@@ -64,11 +64,11 @@ There are only 2 tags right now.
 
 I am in no way affiliated with the DeezloaderRMX project (or any other Deezloader project for that matter), I just wanted the challenge to create my first Docker container.
 
-Dockerhub link for this container: https://hub.docker.com/r/jstrader/deezloadermx
+Dockerhub link for this container: https://hub.docker.com/r/bocki/deezloaderrmx
 
 Repo for Deezloader Remix: https://notabug.org/RemixDevs/DeezloaderRemix
 
-Issue Tracker for this Docker: https://github.com/tempestnano/deezloadermx-docker/issues
+Issue Tracker for this Docker: https://github.com/Bockiii/deezloadermx-docker/issues
 
 
 Feel free to open an issue that is Docker related, and not related to Deezloader development. Go to the Deezloader repository for that.
