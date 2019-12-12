@@ -1,4 +1,5 @@
 # deezloadermx-docker
+This is my personal fork of bocki/deezloaderrmx for testing. I recommend you use that if possible.
 
 Deezloader Remix in a Docker container.
 
